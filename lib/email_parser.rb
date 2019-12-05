@@ -19,7 +19,7 @@ class EmailAddressParser
     unique_emails
 
     #better answer:
-    emails.split(/, | /).uniq
+    # emails.split(/, | /).uniq
   end
 end
 
