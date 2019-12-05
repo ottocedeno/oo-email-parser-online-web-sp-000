@@ -11,6 +11,7 @@ class EmailAddressParser
     @emails = email_addresses
   end
 
+  # you could have used #unique!!! 
   def parse
     unique_emails = []
     parsed_emails = emails.split(/, | /)
