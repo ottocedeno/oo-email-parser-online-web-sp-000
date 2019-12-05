@@ -11,7 +11,7 @@ class EmailAddressParser
     @emails = email_addresses
   end
 
-  # you could have used #unique!!! 
+  # you could have used #unique!!!
   def parse
     unique_emails = []
     parsed_emails = emails.split(/, | /)
@@ -19,7 +19,5 @@ class EmailAddressParser
     unique_emails
   end
 end
-
-test1 = EmailAddressParser.new("otto@ottostacos.com, ottoc.nyc@gmail.com, otto@creativespaceclub.com")
 
 # binding.pry
