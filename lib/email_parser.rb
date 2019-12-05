@@ -17,6 +17,9 @@ class EmailAddressParser
     parsed_emails = emails.split(/, | /)
     parsed_emails.each {|email| unique_emails << email if !unique_emails.include?(email)}
     unique_emails
+
+    #better answer:
+    emails.split(/, | /).uniq
   end
 end
 
